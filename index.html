@@ -98,7 +98,7 @@
 
         // Establish WebSocket connection to receive live watch count
         const countElement = document.getElementById('watch-count');
-        const socket = new WebSocket('ws://yourserver.com/path');
+        const socket = new WebSocket('https://bblive3.github.io/bblive/');
 
         socket.onmessage = function(event) {
             countElement.textContent = event.data;
