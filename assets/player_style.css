@@ -23,11 +23,6 @@ body {
 	background: #0c111f
 }
 
-#count {
-    font-size: 2em;
-    font-weight: bold;
-}
-
 .overflow, .circle-line {
     position: absolute;
     top: 50%;

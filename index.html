@@ -25,8 +25,6 @@
     <div class="circle-red">&nbsp;</div>
     <div class="circle-green">&nbsp;</div>
     <div class="circle-yellow">&nbsp;</div>
-    <h1>Live Watch Count</h1>
-    <div id="count">0</div>
     </div>
 	</div>
     </div>
@@ -91,25 +89,6 @@
     $("#loader-wrapper").delay(1500).fadeOut("slow");
     }, 2000);
     </script>
-
-<script>
-    const countElement = document.getElementById('count');
-
-    // Establish WebSocket connection
-    const socket = new WebSocket('ws://yourserver.com/path');
-
-    socket.onmessage = function(event) {
-        countElement.textContent = event.data;
-    };
-
-    socket.onerror = function(error) {
-        console.error('WebSocket Error:', error);
-    };
-
-    socket.onclose = function() {
-        console.log('WebSocket connection closed');
-    };
-</script>
     
     <?php include './includeds/ad-popup.php';?>
     
